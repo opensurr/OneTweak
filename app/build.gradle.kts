@@ -43,7 +43,12 @@ dependencies {
     implementation("androidx.core:core-ktx:1.15.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
 
-    // Native ADB client: wireless pairing + shell (replaces Shizuku)
+    // LibADB
     implementation("com.github.MuntashirAkon:libadb-android:3.1.1")
+
+    // Certificate generation for LibADB pairing
+    implementation("com.github.MuntashirAkon:sun-security-android:1.1")
+
+    // Conscrypt for TLS
     implementation("org.conscrypt:conscrypt-android:2.5.2")
 }
